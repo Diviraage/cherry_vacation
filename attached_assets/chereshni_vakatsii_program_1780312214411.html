@@ -1,0 +1,299 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap');
+
+  .cv-wrap {
+    background: #FDF8F4;
+    min-height: 100vh;
+    padding: 0 0 3rem;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .cv-hero {
+    background: linear-gradient(180deg, #fff5f5 0%, #FDF8F4 100%);
+    border-bottom: 0.5px solid #f0d4d4;
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cv-cherries-deco {
+    position: absolute;
+    font-size: 28px;
+    opacity: 0.18;
+    user-select: none;
+  }
+
+  .cv-logo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 0.5px solid #f0d4d4;
+    border-radius: 40px;
+    padding: 6px 16px 6px 10px;
+    margin-bottom: 1.2rem;
+  }
+
+  .cv-logo-liko {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+
+  .cv-logo-liko span {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  .cv-logo-year {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a03030;
+    letter-spacing: 0.04em;
+  }
+
+  .cv-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #8B1A1A;
+    margin: 0 0 0.3rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .cv-subtitle {
+    font-size: 13px;
+    color: #b06060;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .cv-divider {
+    width: 48px;
+    height: 2px;
+    background: #d4454545;
+    border-radius: 2px;
+    margin: 1rem auto 0;
+  }
+
+  .cv-body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 0;
+  }
+
+  .cv-section-label {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #b06060;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cv-section-label::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;
+    background: #f0d4d4;
+  }
+
+  .cv-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cv-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 0;
+    padding: 1rem 0;
+    border-bottom: 0.5px solid #f0d4d4;
+    align-items: center;
+    transition: background 0.15s;
+  }
+
+  .cv-item:first-child {
+    border-top: 0.5px solid #f0d4d4;
+  }
+
+  .cv-time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a03030;
+    letter-spacing: 0.02em;
+    padding-right: 1rem;
+  }
+
+  .cv-event {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cv-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4454545;
+    flex-shrink: 0;
+  }
+
+  .cv-event-name {
+    font-size: 15px;
+    color: #3d2020;
+    line-height: 1.4;
+  }
+
+  .cv-item.highlight .cv-dot {
+    background: #c0392b;
+  }
+
+  .cv-item.highlight .cv-event-name {
+    font-weight: 500;
+    color: #8B1A1A;
+  }
+
+  .cv-item.lunch .cv-event-name {
+    color: #888;
+    font-style: italic;
+  }
+
+  .cv-item.lunch .cv-time {
+    color: #bbb;
+  }
+
+  .cv-cherry-row {
+    text-align: center;
+    font-size: 22px;
+    opacity: 0.25;
+    margin-top: 2rem;
+    letter-spacing: 0.2em;
+    user-select: none;
+  }
+
+  .cv-footer {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid #f0d4d4;
+  }
+
+  .cv-footer-text {
+    font-size: 12px;
+    color: #c09090;
+    letter-spacing: 0.08em;
+  }
+</style>
+
+<div class="cv-wrap">
+  <div class="cv-hero">
+    <span class="cv-cherries-deco" style="top:10px;left:20px">🍒</span>
+    <span class="cv-cherries-deco" style="top:30px;right:40px">🍒</span>
+    <span class="cv-cherries-deco" style="bottom:20px;left:60px">🍒</span>
+    <span class="cv-cherries-deco" style="bottom:10px;right:20px">🍒</span>
+
+    <div class="cv-logo-badge">
+      <div class="cv-logo-liko">
+        <span style="background:#e63946">L</span>
+        <span style="background:#f4a261">I</span>
+        <span style="background:#2a9d8f">K</span>
+        <span style="background:#457b9d">O</span>
+      </div>
+      <span class="cv-logo-year">2026</span>
+    </div>
+
+    <h1 class="cv-title">Черешневі Вакації</h1>
+    <p class="cv-subtitle">Програма літніх зустрічей освітян України</p>
+    <div class="cv-divider"></div>
+  </div>
+
+  <div class="cv-body">
+    <p class="cv-section-label">Розклад дня</p>
+
+    <div class="cv-items">
+
+      <div class="cv-item highlight">
+        <div class="cv-time">9:30 – 10:00</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Теплі зустрічі, фото на згадку та реєстрація</div>
+        </div>
+      </div>
+
+      <div class="cv-item highlight">
+        <div class="cv-time">10:00 – 10:30</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Святкове відкриття в атріумі</div>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-time">10:30 – 11:50</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Ранішній релакс з турботою про себе</div>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-time">12:00 – 13:00</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Черешня-тур</div>
+        </div>
+      </div>
+
+      <div class="cv-item lunch">
+        <div class="cv-time">13:00 – 13:50</div>
+        <div class="cv-event">
+          <div class="cv-dot" style="background:#ddd"></div>
+          <div class="cv-event-name">Перерва на обід</div>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-time">14:00 – 15:00</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Чарівний сад краси і натхнення</div>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-time">15:00 – 16:15</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Майданчик НМТ</div>
+        </div>
+      </div>
+
+      <div class="cv-item highlight">
+        <div class="cv-time">16:20 – 17:30</div>
+        <div class="cv-event">
+          <div class="cv-dot"></div>
+          <div class="cv-event-name">Черешневий урожай</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cv-cherry-row">🍒 🍒 🍒 🍒 🍒</div>
+
+    <div class="cv-footer">
+      <p class="cv-footer-text">ЛІКО-ШКОЛА · ЧЕРЕШНЕВІ ВАКАЦІЇ 2026</p>
+    </div>
+  </div>
+</div>
